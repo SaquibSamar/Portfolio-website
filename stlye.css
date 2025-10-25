@@ -1,0 +1,168 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #0d0d0d;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* ===== GLOBAL STYLES ===== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section__title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.button {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+  border: 1px solid #444;
+}
+
+.button:hover {
+  background: #333;
+}
+
+.button-outline {
+  background: transparent;
+  color: #ccc;
+}
+
+.button-outline:hover {
+  background: #222;
+  color: #fff;
+}
+
+/* ===== HEADER ===== */
+.header {
+  background: #111;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav__menu {
+  display: none;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__link {
+  color: #ccc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav__link:hover,
+.active-link {
+  color: #fff;
+}
+
+/* ===== HOME ===== */
+.home__container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 6rem;
+  text-align: center;
+}
+
+.home__title span {
+  color: #fff;
+}
+
+.home__img img {
+  width: 200px;
+  border: 2px solid #333;
+}
+
+/* ===== SKILLS ===== */
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.skills__data {
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/* ===== CONTACT ===== */
+.contact__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.contact__info p {
+  margin-bottom: 0.6rem;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #222;
+  background: #0d0d0d;
+}
